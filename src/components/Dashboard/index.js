@@ -11,8 +11,7 @@ const Dashboard = () => {
   const [selectedContact, setSelectedContact] = useState(null);
   const [isAdding, setIsAdding] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
-  const [filetrs, setFilters] = useState('All');
-  const [myArray, setMyArray] = useState(["All","Personal","Business"]);
+
 
 
   useEffect(() => {
@@ -25,7 +24,6 @@ const Dashboard = () => {
     const [contact] = contacts.filter(contact => contact.id === id);
     setSelectedContact(contact);
     setIsEditing(true);
-    setFilters('All')
   };
 
   const handleDelete = id => {
@@ -62,8 +60,6 @@ const Dashboard = () => {
         <>
           <Header
             setIsAdding={setIsAdding}
-            setFilters={setFilters}
-
           />
           <Table
             contacts={contacts}

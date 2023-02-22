@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 
-const Add = ({ contacts, setContacts, setIsAdding, setValue }) => {
+const Add = ({ contacts, setContacts, setIsAdding }) => {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [gender, setGender] = useState('');

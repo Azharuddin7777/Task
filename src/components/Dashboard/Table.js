@@ -1,10 +1,9 @@
 import React from 'react';
 
-const Table = ({ contacts, handleEdit, handleDelete, handleFilters }) => {
+const Table = ({ contacts, handleEdit, handleDelete }) => {
 
   contacts.forEach((contact, i) => {
     contacts.id = i + 1;
-    console.log(handleFilters, "handleFilters")
   });
 
 
